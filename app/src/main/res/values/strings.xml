@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="author_not_available">Author unavailable</string>
+    <string name="no_news">No news found</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="article_by">"Article By: "</string>
+    <string name="problem_http">Problem making the HTTP request.</string>
+    <string name="query_guardian_url">"https://content.guardianapis.com"</string>
+    <string name="url_issue">Problem with the given URL</string>
+    <string name="response_error">Response code unsuccessful:</string>
+    <string name="json_error">Unable to retrieve json</string>
+    <string name="category">"Category: "</string>
+    <string name="get">GET</string>
+    <string name="web_title">webTitle</string>
+    <string name="section_name">sectionName</string>
+    <string name="response">response</string>
+    <string name="results">results</string>
+    <string name="tags">tags</string>
+    <string name="web_url">webUrl</string>
+    <string name="query_utils">QueryUtils</string>
+    <string name="web_publication_date">webPublicationDate</string>
+    <string name="json_problem">Problem parsing the news JSON results</string>
+    <string name="utf">UTF-8</string>
+    <string name="news">news</string>
+
+    <string name="settings_menu">Settings</string>
+
+    <string name="settings_title">News Settings</string>
+    <!--<string name="settings_min_magnitude_label">Minimum Magnitude</string>-->
+
+    <!--default preference settings-->
+    <string name="location">Location</string>
+    <string name="settings_location_key" translatable="false">location_preference</string>
+    <!--<string name="settings_location_key" translatable="false">q</string>-->
+    <string name="settings_location_default" translatable="false">us</string>
+
+    <string name="category2">"Category"</string>
+    <string name="settings_category_key" translatable="false">category_preference</string>
+    <!--<string name="settings_category_key" translatable="false">section</string>-->
+    <string name="settings_category_default" translatable="false">news</string>
+
+    <!-- category options -->
+    <!--important note! capitalizing a category returns NO results!-->
+    <!--note these options are serving as both title and search query - need change for visual appeal-->
+    <string name="sports">sport</string>
+    <string name="film">film</string>
+    <string name="politics">politics</string>
+    <string name="food">food</string>
+
+    <!--location options-->
+    <!--<string name="us_news">US News</string>-->
+    <!--<string name="uk_news">UK News</string>-->
+
+    <string name="us_news">usa</string>
+    <string name="uk_news">uk</string>
+
+    <string name="show_tags">show-tags</string>
+    <string name="contributor">contributor</string>
+    <string name="api_key_xml">api-key</string>
+    <string name="base_uri">BASE URI:</string>
+    <string name="section">section</string>
+    <string name="usa">usa</string>
+    <string name="q">q</string>
+    <string name="search">search</string>
+
+    <!--<string name="category_preference">category_preference</string>-->
+    <!--<string name="location_preference">location_preference</string>-->
+</resources>
