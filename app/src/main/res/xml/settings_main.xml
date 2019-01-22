@@ -1,20 +1,18 @@
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/settings_title">
 
     <ListPreference
         android:defaultValue="@string/settings_location_default"
-        android:key="@string/settings_location_key"
-        android:title="@string/location"
         android:entries="@array/Location"
         android:entryValues="@array/LocationValues"
-        />
+        android:key="@string/settings_location_key"
+        android:title="@string/location" />
 
     <ListPreference
         android:defaultValue="@string/settings_category_default"
-        android:key="@string/settings_category_key"
-        android:title="@string/category2"
         android:entries="@array/Category"
-        android:entryValues="@array/Category"/>
+        android:entryValues="@array/CategoryValues"
+        android:key="@string/settings_category_key"
+        android:title="@string/category2" />
 
 </PreferenceScreen>

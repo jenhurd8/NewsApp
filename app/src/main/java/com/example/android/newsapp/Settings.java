@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 public class Settings extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
     }
@@ -31,13 +31,13 @@ public class Settings extends AppCompatActivity {
         }
 
         @Override
-        public boolean onPreferenceChange(Preference preference, Object value){
+        public boolean onPreferenceChange(Preference preference, Object value) {
             String stringValue = value.toString();
             preference.setSummary(stringValue);
             return true;
         }
 
-        private void bindPreferenceSummaryToValue(Preference preference){
+        private void bindPreferenceSummaryToValue(Preference preference) {
             preference.setOnPreferenceChangeListener(this);
 
             SharedPreferences preferences =

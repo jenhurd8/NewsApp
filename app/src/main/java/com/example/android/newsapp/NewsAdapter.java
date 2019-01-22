@@ -19,8 +19,6 @@ public class NewsAdapter extends ArrayAdapter<News> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        Log.d("Get view TAG:", "getView: " + getCount());
-
         View listItemView = convertView;
         if (listItemView == null) {
 
@@ -32,7 +30,6 @@ public class NewsAdapter extends ArrayAdapter<News> {
 
         TextView titleView = (TextView) listItemView.findViewById(R.id.textView_title);
         titleView.setText(currentNews.getTitle());
-        Log.d("Get view TAG:", "getView: " + currentNews.getTitle());
 
         TextView sectionView = (TextView) listItemView.findViewById(R.id.textView_section);
         sectionView.setText(App.getContext().getResources().getString(R.string.category) + currentNews.getSection());

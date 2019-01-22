@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="Location">
-        <item value="US">@string/us_news</item>
-        <item value="UK">@string/uk_news</item>
+        <item>@string/us_news_title</item>
+        <item>@string/uk_news_title</item>
     </string-array>
     <string-array name="LocationValues">
-        <item value="US">@string/us_news</item>
-        <item value="UK">@string/uk_news</item>
+        <item value="@string/us_news">@string/us_news</item>
+        <item value="@string/uk_news">@string/uk_news</item>
     </string-array>
 
     <string-array name="Category">
-        <item value="news">@string/news</item>
-        <item value="politics">@string/politics</item>
-        <item value="sports">@string/sports</item>
-        <item value="film">@string/film</item>
+        <item>@string/news_title</item>
+        <item>@string/politics_title</item>
+        <item>@string/sports_title</item>
+        <item>@string/film_title</item>
+        <item>@string/food_title</item>
     </string-array>
     <string-array name="CategoryValues">
-        <item value="news">@string/news</item>
-        <item value="politics">@string/politics</item>
-        <item value="sports">@string/sports</item>
-        <item value="film">@string/film</item>
+        <item value="@string/news">@string/news</item>
+        <item value="@string/politics">@string/politics</item>
+        <item value="@string/sports">@string/sports</item>
+        <item value="@string/film">@string/film</item>
+        <item value="@string/food">@string/food</item>
     </string-array>
 </resources>

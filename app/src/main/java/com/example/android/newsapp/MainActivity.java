@@ -59,14 +59,9 @@ public class MainActivity extends AppCompatActivity
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
         //adds a path to the baseUri ex: /politics
-        //working test string POLITICS
-        //uriBuilder.appendPath(getString(R.string.politics));
         uriBuilder.appendPath(getString(R.string.search));
 
-        //working query params
-//        uriBuilder.appendQueryParameter(getString(R.string.settings_location_key), my_news_location);
-//        uriBuilder.appendQueryParameter(getString(R.string.settings_category_key), my_news_category);
-
+        //queries a specific category or location
         uriBuilder.appendQueryParameter(getString(R.string.section), my_news_category);
         uriBuilder.appendQueryParameter(getString(R.string.q), my_news_location);
 
@@ -75,8 +70,6 @@ public class MainActivity extends AppCompatActivity
 
         //adds the api key to authenticate to theguardian.com
         uriBuilder.appendQueryParameter(getString(R.string.api_key_xml), apiKey);
-
-       // System.out.println("BASE URI: " + getString(R.string.base_uri) + baseUri);
 
         //creates a loader when one is not detected
         return new NewsLoader(this, uriBuilder.toString());
@@ -188,9 +181,9 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public void onSharedPreferenceChanged(SharedPreferences prefs, String key){
-        if(key.equals(getString(R.string.settings_category_key)) ||
-                key.equals(getString(R.string.settings_location_key))){
+    public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
+        if (key.equals(getString(R.string.settings_category_key)) ||
+                key.equals(getString(R.string.settings_location_key))) {
             mAdapter.clear();
 
             mEmptyNewsTextView.setVisibility(View.GONE);

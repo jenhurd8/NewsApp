@@ -82,7 +82,7 @@ public final class QueryUtils {
     private static String readFromStream(InputStream inputStream) throws IOException {
         StringBuilder output = new StringBuilder();
         if (inputStream != null) {
-            InputStreamReader inputStreamReader = new InputStreamReader(inputStream, 
+            InputStreamReader inputStreamReader = new InputStreamReader(inputStream,
                     Charset.forName(App.getContext().getResources().getString(R.string.utf)));
             BufferedReader reader = new BufferedReader(inputStreamReader);
             String line = reader.readLine();
